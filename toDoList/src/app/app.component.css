@@ -1,0 +1,9 @@
+.mainDiv{
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height:fit-content;
+}

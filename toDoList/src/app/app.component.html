@@ -2,10 +2,29 @@
   <br>
   <br>
   <br>
-  <div>
+  <div class="mainDiv">
     <h2>To Do List</h2>
+  </div>
+  <div class="mainDiv">
     <p-card header="Add your tasks">
-         Content
+      <p-table [value]="tasks">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>#</th>
+                <th>Task</th>
+                <th>Status</th>
+                <th>Delete</th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-tasks>
+            <tr>
+                <td>{{tasks.id}}</td>
+                <td>{{tasks.task}}</td>
+                <td>{{tasks.status}}</td>
+                <td>{{tasks.delete}}</td>
+            </tr>
+        </ng-template>
+    </p-table>
     </p-card>
   </div>
 </div>
